@@ -1,0 +1,115 @@
+@import "_base";
+@import "_variables";
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  .card {
+    width: 350px;
+    height: 600px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $--neutral-color-bg-card;
+    border-radius: 20px ;  
+    margin: auto 0;
+    
+    .banner{
+      img{
+        border-radius: 20px 20px  0 0 ;  
+        width: 100%;
+      }
+    }
+    
+    .content{
+      padding: 1.25rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .title{
+        margin-bottom: 20px;
+        color: $--neutral-color-header-text;
+      }
+
+      p{
+        color: $--neutral-color-text-button-cancel;
+      }
+
+      .plan{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1.25rem 0;
+        width: 100%;
+        padding: 1.25rem;
+        border-radius: 10px;
+        background-color: $--primary-color-bg;
+
+        .plan-info{
+          display: flex;
+          flex-direction: column;
+          h3{
+            color: $--neutral-color-header-text;
+            font: 0.75rem;
+            font-weight: 700;
+          }
+          span{
+            font-weight: 500;
+            color: $--neutral-color-text-button-cancel;
+          }
+        }
+
+        a{
+
+          span{
+            color: $--primary-color-button;
+            font-size: .875rem;
+            font-weight: 700;
+            &:hover{
+              filter: brightness(1.4);
+              transition: 300ms;
+            }
+          }
+        }
+      }
+
+      .btn-process{
+        color: $--neutral-color-bg-card;
+        background-color: $--primary-color-button;
+        box-shadow: 2px 5px 15px $--primary-color-button;
+
+        &:hover{
+          filter: brightness(.83);
+          transition: 300ms;
+        }
+      }
+
+      .btn-cancel{
+        color: $--neutral-color-text-button-cancel;
+        background-color: $--neutral-color-bg-card;
+        margin-bottom: 100px;
+
+        &:hover{
+          filter: brightness(.93);
+          color: hsl(224, 25%, 60%);;
+          transition: 300ms;
+        }
+      }
+      .btn-process, .btn-cancel{
+        border: none;
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 10px 0;
+        font-weight: 900;
+      }
+    }
+  }
+}

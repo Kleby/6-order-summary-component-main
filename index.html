@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/public/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./src/css/main.css">
+
   <title>Frontend Mentor | Order summary card</title>
 
 </head>
-<body>
-  <main>
 
-    Order Summary
-    
-    You can now listen to millions of songs, audiobooks, and podcasts on any 
-    device anywhere you like!
-    
-    Annual Plan
-    $59.99/year
-    
-    Change
-    
-    Proceed to Payment
-    Cancel Order
-  </main>
-    
-    <div >
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+<body>
+  <main class="container">
+    <div class="card">
+      <div class="banner"><img src="./src/public/images/illustration-hero.svg" alt=""></div>
+      <section class="content">
+
+        <h2 class="title">
+          Order Summary
+        </h2>
+
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!
+        </p>
+
+        <div class="plan">
+          <img src="./src/public/images/icon-music.svg" />
+          <div class="plan-info">
+            <h3>Annual Plan</h3>
+            <span>$59.99/year</span>
+          </div>
+
+          <a href="#"><span>Change</span></a>
+
+        </div>
+
+        <button class="btn-process">Proceed to Payment</button>
+        <button class="btn-cancel">Cancel Order</button>
+      </section>
     </div>
+
+    <footer class="footer">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/jo%C3%A3o-kleby-barros-veiga-71a11638">Kleby Veiga</a>.
+    </footer>
+  </main>
 </body>
+
 </html>

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,900;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  background-color: hsl(225deg, 100%, 94%);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .card {
+  width: 350px;
+  height: 600px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: hsl(225deg, 100%, 98%);
+  border-radius: 20px;
+  margin: auto 0;
+}
+.container .card .banner img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+.container .card .content {
+  padding: 1.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .card .content .title {
+  margin-bottom: 20px;
+  color: hsl(223deg, 47%, 23%);
+}
+.container .card .content p {
+  color: hsl(224deg, 23%, 55%);
+}
+.container .card .content .plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.25rem 0;
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 10px;
+  background-color: hsl(225deg, 100%, 94%);
+}
+.container .card .content .plan .plan-info {
+  display: flex;
+  flex-direction: column;
+}
+.container .card .content .plan .plan-info h3 {
+  color: hsl(223deg, 47%, 23%);
+  font: 0.75rem;
+  font-weight: 700;
+}
+.container .card .content .plan .plan-info span {
+  font-weight: 500;
+  color: hsl(224deg, 23%, 55%);
+}
+.container .card .content .plan a span {
+  color: hsl(245deg, 75%, 52%);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.container .card .content .plan a span:hover {
+  filter: brightness(1.4);
+  transition: 300ms;
+}
+.container .card .content .btn-process {
+  color: hsl(225deg, 100%, 98%);
+  background-color: hsl(245deg, 75%, 52%);
+  box-shadow: 2px 5px 15px hsl(245deg, 75%, 52%);
+}
+.container .card .content .btn-process:hover {
+  filter: brightness(0.83);
+  transition: 300ms;
+}
+.container .card .content .btn-cancel {
+  color: hsl(224deg, 23%, 55%);
+  background-color: hsl(225deg, 100%, 98%);
+  margin-bottom: 100px;
+}
+.container .card .content .btn-cancel:hover {
+  filter: brightness(0.93);
+  color: hsl(224deg, 25%, 60%);
+  transition: 300ms;
+}
+.container .card .content .btn-process, .container .card .content .btn-cancel {
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 10px 0;
+  font-weight: 900;
+}/*# sourceMappingURL=main.css.map */
